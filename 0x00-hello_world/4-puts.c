@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * description: main - prints out string to stdout.
- * return: 0 if success
+ * main - main block
+ * Return: 0
  */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+        return (0);
 }
