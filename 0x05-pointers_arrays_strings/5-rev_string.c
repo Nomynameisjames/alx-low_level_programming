@@ -6,7 +6,7 @@
  */
 void rev_string(char *s)
 {
-	int i, adava, onimisi;
+	int i, size, half;
 	char first, last;
 
 	i = 0;
@@ -14,14 +14,14 @@ void rev_string(char *s)
 	{
 		i++;
 	}
-	adava = i - 1;
-	onimisi = adava / 2;
-	while (adava >= 0)
+	size = i - 1;
+	half = size / 2;
+	while (size >= 0)
 	{
-		first = s[adava - onimisi};
-		last = s[onimisi];
-		s[onimisi] = first;
-		s[adava - onimisi] = last;
-		onimisi--;
+		first = s[size - half];
+		last = s[half];
+		s[half] = first;
+		s[size - half] = last;
+		half--;
 	}
 }
