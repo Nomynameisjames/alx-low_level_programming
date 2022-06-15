@@ -7,7 +7,8 @@
  *@n: maximum number of characters to be appended.
  *Return: concantenet string
  */
-char *_strncat(char *dest, char *src, int n);
+
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0, j = 0;
 
