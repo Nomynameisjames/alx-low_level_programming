@@ -29,6 +29,7 @@ int separator(char c)
 			return (0);
 	}
 }
+
 /**
  * cap_string - capitalizes chars after given deliminators
  * @s: string to uppercase
@@ -40,6 +41,7 @@ char *cap_string(char *s)
 	int count, upper;
 
 	upper = -32; /*value constant 32*/
+
 	count = 0;
 	/*Start WHILE*/
 	while (s[count] != '\0')
@@ -49,10 +51,9 @@ char *cap_string(char *s)
 		{
 			/*Convert uppercase*/
 			if (s[count] == *s || separator(s[count - 1]))
-			s[count] += upper;
-
-			count++; /*Add count*/
+				s[count] += upper;
 		}
-		return (s);
+		count++; /*Add count*/
 	}
-i}
+	return (s);
+}
