@@ -1,0 +1,2 @@
+struc and typedef
+
