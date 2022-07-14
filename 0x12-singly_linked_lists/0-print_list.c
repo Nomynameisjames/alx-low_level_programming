@@ -11,7 +11,7 @@ size_t print_list(const list_t *h)
 	while (h)
 	{
 
-		if (h->str == NULL)		
+		if (h->str == NULL)
 		/*if false i.e. NULL, NaN, undefined or "" */
 			printf("[0] (nil)\n");
 		else
